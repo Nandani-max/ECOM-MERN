@@ -1,0 +1,21 @@
+{
+  "name": "shopnest-fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "microservice"
+  ],
+  "license": "ISC",
+  "author": "Nandani",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev:server": "cd backend && npm run dev",
+    "dev:client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
